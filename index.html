@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Website Layout</title>
+   <style>
+       *{
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+    display:flex;
+    flex-direction:column;
+    margin:0;
+
+}
+a{
+    text-decoration: none;
+}
+header{
+    background:blueviolet;
+    display: flex;
+    align-items:center;
+    padding:15px 0 ;
+}
+header ul{
+    list-style:none;
+    display:flex;
+    padding: 0;
+    margin: 0;
+}
+header a{
+    color:white;
+}
+#logo{
+    margin:0 auto;
+    font-size:30px;
+}
+/* #logo a{ 
+    text-align:center;
+} */
+#menu li{
+   padding: 10px; 
+}
+#social-links li{
+    padding: 10px; 
+ }
+ #main{
+     display:flex;
+ }
+ aside{
+     padding:10px;
+     flex:0 0 20vw;
+     background:beige;
+ }
+ aside ul{
+     list-style:none;
+     padding:0;
+ }
+ aside ul a{
+     color:blueviolet;
+     padding:10px;
+     display:block;
+     border-bottom:1px solid grey;
+ }
+ aside img{
+     width:100%;
+ }
+  article{
+     padding:10px;
+ }
+ .services-container{
+   display:flex;
+   justify-content:space-between;
+ }
+ .service-box{
+     border:1px solid #eee;
+     flex-basis:32%;
+     max-width:370px;
+     padding:10px;
+     margin-bottom:15px;
+     display:flex;
+     flex-direction:column; 
+ }
+ .service-box img{
+    width:100%;
+}
+.service-box h3{
+margin:5px 0 1px;
+ }
+ .service-box{
+     margin: 0 0 10px;
+ }
+
+.call-to-action{
+    align-self:flex-start;
+    margin-top:auto;
+}
+.call-to-action a{
+background:blue ;
+border:2px solid transparent;
+color:white;
+padding:8px 13px;
+display:block;
+}
+.call-to-action a:hover{
+background:transparent ;
+border:2px solid blue;
+color:grey;
+}
+footer{
+    background: blueviolet;
+    color:white;
+    text-align:center;
+    padding:15px 0;
+}
+
+   </style>
+    <script src="https://kit.fontawesome.com/061ca1a3ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+        </nav>
+        <div id="logo">
+            <a href="">Shekhar777</a>
+        </div>
+        <nav id="social-links">
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></i></a></li>
+                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">
+        <aside class="">
+            <ul>
+                <li><a href="">Some Link</a></li>
+                <li><a href="">Some Link</a></li>
+                <li><a href="">Some Link</a></li>
+                <li><a href="">Some Link</a></li>
+                <li><a href="">Some Link</a></li>
+            </ul>
+          <img src="./images/aside.jpg">
+        </aside>
+     <article class="">
+         <h2>Welcome to our Website</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti, ratione, pariatur doloribus sed sunt molestiae cumque inventore at dignissimos nemo mollitia rerum. Perspiciatis debitis natus perferendis aspernatur aliquid, quisquam sint, accusamus nesciunt inventore odio maiores voluptatum officiis repellat illo ullam rem facere commodi animi libero praesentium officia blanditiis. Magnam quo quidem nostrum ullam voluptatibus quae corporis quia animi fugiat earum. Voluptate magnam architecto illo maxime rerum laboriosam eos distinctio tempore id incidunt repudiandae sed, quasi at, quaerat, expedita error! Et praesentium enim itaque deleniti dolores eum numquam magni natus hic velit! Magnam repudiandae similique iusto tempore error fugiat praesentium.</p>
+    <h2>Our Services</h2>
+    <div class="services-container">
+ <div class="service-box">
+    <div class="service-img">
+        <img src="./images/webdesign.jpg" alt="">
+      </div>  
+      <div class="service-title">
+          <h3>Web Designing</h3>
+      </div>
+  <div class="service-desc">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam eveniet minima minus quibusdam reiciendis nulla repellat, optio eius fugiat nam.</p>
+  </div>
+  <div class="call-to-action">
+      <a href="">Read more</a>
+  </div>  
+ </div>
+ <div class="service-box">
+ <div class="service-img">
+    <img src="./images/webdevelopment.jpg" alt="" >
+  </div>  
+  <div class="service-title">
+      <h3>Web Development</h3>
+  </div>
+<div class="service-desc">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, saepe?</p>
+</div>
+<div class="call-to-action">
+  <a href="">Read more</a>
+</div>
+</div>
+<div class="service-box">
+<div class="service-img">
+    <img src="images/shutterstock_572886535.jpg" alt="">
+  </div>  
+  <div class="service-title">
+      <h3>Mobile App Development</h3>
+  </div>
+<div class="service-desc">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, saepe?</p>
+</div>
+<div class="call-to-action">
+  <a href="">Read more</a>
+</div>
+</div>
+</div>
+</article>
+    </div>
+    <footer>
+        Made by @ARHAN SHEKHAR
+    </footer>
+</body>
+</html>
